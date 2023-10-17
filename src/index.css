@@ -43,7 +43,11 @@
     --card-slide-height: 17.5vw;
   }
   
+  .redborder{
+    border: 1px solid red;
+  }
   /* IMPORTANT -----------------------------------------------------
+  
   if background of container have images then uncomment this */
   .embla__container {
     backface-visibility: hidden;

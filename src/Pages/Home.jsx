@@ -45,6 +45,7 @@ export default function Home() {
         cards={cards}
         isCardCarousel={true}
       />
+
       <Adv isAdvLeft={true}>
         <BannerCarousel customClasses="w-[30vw]" images={images} />
         <Section

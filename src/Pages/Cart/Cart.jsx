@@ -11,7 +11,7 @@ const Cart = () => {
   const [updatePhone, setUpdatePhone] = useState('1234567890')
 
   return (
-    <main className='mx-20  my-10 flex flex-col'>
+    <main className="mx-20  my-10 flex flex-col">
       <h1 className="mb-10 text-3xl font-bold">Shopping Cart</h1>
       {cartProducts.map((product) => (
         <CartProduct
@@ -67,7 +67,7 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="flex h-28 w-[25vw] items-center justify-between  justify-between rounded-3xl border px-5">
+        <div className="flex h-28 w-[25vw] items-center justify-between rounded-3xl border px-5">
           {/* Place your order */}
           <div className=" flex w-[12vw] justify-center">
             <Link href={'/paymentGateway'}>

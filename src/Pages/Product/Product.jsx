@@ -47,7 +47,7 @@ const Product = () => {
           />
           <CustomerReviews
             comment={comment}
-            Name="Abhishek Jha s/o sachin yadav"
+            Name="Abhishek Jha"
             rating={3.4}
             userImage="https://fastly.picsum.photos/id/838/640/480.jpg?hmac=2QcoWqBUG3DmpzyUOpzW-50L-Rj41gXyhKQkvmFy7eo"
           />

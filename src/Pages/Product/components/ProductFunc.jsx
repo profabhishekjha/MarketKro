@@ -61,7 +61,7 @@ export const CustomerReviews = ({ comment, Name, userImage, rating }) => {
         </div>
       </div>
       {/* <Separator className="my-3 mb-10" /> */}
-      <div className='border-b my-3 mb-10'></div>
+      <div className="my-3 mb-10 border-b"></div>
     </>
   )
 }
