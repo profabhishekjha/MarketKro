@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import logo from '/Images/logo.png'
 import { Link } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   useEffect(() => {
