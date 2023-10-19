@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState, useRef } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
-import MenuItem from '../ui/MenuItem'
+import MenuItem from './MenuItem'
 import Avatar from '../ui/Avatar'
-import LoginModal from '../modals/LoginModal'
-import RegisterModal from '../modals/RegisterModal'
+import LoginModal from './LoginModal'
+import RegisterModal from './RegisterModal'
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
