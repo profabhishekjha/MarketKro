@@ -7,7 +7,7 @@ const Footer = () => {
         <Link href={'/'}>
           <div className="flex items-center gap-6 ">
             <img src={logo} alt="Market Kro Logo" className="aspect-auto h-24 w-auto" />
-            <span className="text-4xl font-bold">Market Kro</span>
+            <span className="text-4xl font-bold">Anav Mart</span>
           </div>
         </Link>
       </div>

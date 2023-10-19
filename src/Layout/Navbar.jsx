@@ -30,7 +30,7 @@ const Navbar = () => {
         <div>
           <Link to={'/'} className="flex w-auto items-center gap-3">
             <img src={logo} alt="Market Kro Logo" className="aspect-auto h-20 w-auto" />
-            <span className="text-2xl font-bold">MarketKro</span>
+            <span className="text-2xl font-bold">Anav Mart</span>
           </Link>
         </div>
         <div className="flex items-center gap-10 max-sm:gap-5">
