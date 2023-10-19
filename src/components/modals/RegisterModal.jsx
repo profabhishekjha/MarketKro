@@ -51,7 +51,7 @@ function RegisterModal({ onClose, onLoginClick }) {
             <span className="sr-only">Close modal</span>
           </button>
           <div className="px-6 py-6 lg:px-8">
-            <h3 className="mb-4 text-xl font-medium  text-black">Sign up to Dialkro</h3>
+            <h3 className="mb-4 text-xl font-medium  text-black">Sign up to Anav Mart</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6" action="#">
               {/* Form inputs and submit button */}
