@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import logo from '/Images/logo.png'
 import { Link } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
+import UserMenu from '../components/modals/UserMenu'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -38,9 +39,7 @@ const Navbar = () => {
             <Link to={'cart'}>Cart</Link>
             <Dropdown />
           </div>
-          <button>
-            <Link to={'/'}>SignIn</Link>
-          </button>
+          <UserMenu />
 
           <div className="flex md:hidden">
             <button
