@@ -5,13 +5,14 @@ const Footer = () => {
   const navigate = useNavigate()
   return (
     <>
-      <footer className="mt-20 bg-white">
+      <footer className=" mt-20 bg-white">
         <div className="x-auto w-full">
           <hr />
-          <h2 className=" text-4xl font-semibold uppercase text-pink-400">Anav Mart</h2>
-          <div className=" grid grid-cols-2 gap-8 md:grid-cols-4">
-            <div className=" mt-9 flex items-center">
-              <ul className="font-medium text-gray-500 dark:text-gray-400">
+          <h2 className=" p-4 text-4xl font-semibold uppercase text-pink-500">Anav Mart</h2>
+          <div className=" grid grid-cols-2 gap-8 max-md:p-5 md:grid-cols-4 md:p-10">
+            <div className=" flex flex-col">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500 ">Company</h2>
+              <ul className=" font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     About
@@ -29,10 +30,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-                Help center
-              </h2>
+            <div className="">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500 ">Help center</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
@@ -51,10 +50,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-                Legal
-              </h2>
+            <div className="">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500 ">Legal</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
@@ -78,21 +75,21 @@ const Footer = () => {
               </ul>
             </div>
             <div className="">
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500">
                 Meet the Developers
               </h2>
               <ul className="font-small text-gray-500 dark:text-gray-400">
-                <li className="mb-2">
+                <li className="mb-4">
                   <a href="https://github.com/profabhishekjha" target="_blank" rel="noreferrer">
                     Abhishek Jha
                   </a>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   <a href="https://github.com/riturajmahapatra" target="_blank" rel="noreferrer">
                     Rituraj S Mahapatra
                   </a>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   <a href="https://github.com/kumarsushilroy" target="_blank" rel="noreferrer">
                     Sushil Kumar
                   </a>

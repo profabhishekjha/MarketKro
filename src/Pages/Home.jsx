@@ -30,7 +30,7 @@ export default function Home() {
   }
   const cards = CardList()
   return (
-    <main className="mx-10 my-5 flex flex-col gap-16 max-sm:mx-2">
+    <main className=" mx-10 my-5 flex flex-col gap-16 max-sm:mx-2">
       <BannerCarousel images={images} />
       <Section
         FirstHeading="Womans Products"
@@ -45,7 +45,7 @@ export default function Home() {
         isCardCarousel={true}
       />
 
-      {/*       <Adv isAdvLeft={true}>
+      {/* <Adv isAdvLeft={true}>
         <BannerCarousel customClasses="w-[30vw]" images={images} />
         <Section
           FirstHeading="Diwali Special Products"
@@ -55,37 +55,16 @@ export default function Home() {
           cardCarouselCustomClasses={`w-[63vw] `}
         />
       </Adv> */}
-      <Section
-        FirstHeading="Electronics Products"
-        SecondHeading="Best Deals"
-        cards={cards}
-        isCardCarousel={true}
-      />
+
       <Section
         FirstHeading="Children Products"
         SecondHeading="Toys"
         cards={cards}
         isCardCarousel={true}
       />
-      {/*       <Adv isAdvLeft={false}>
-        <BannerCarousel customClasses="w-[30vw]" images={images} />
-        <Section
-          FirstHeading="Diwali Special Products"
-          SecondHeading="50% Discount"
-          cards={cards}
-          isCardCarousel={false}
-          cardCarouselCustomClasses={`w-[63vw] `}
-        />
-      </Adv> */}
       <Section
         FirstHeading="Electronics Products"
         SecondHeading="Best Deals"
-        cards={cards}
-        isCardCarousel={true}
-      />
-      <Section
-        FirstHeading="Children Products"
-        SecondHeading="Toys"
         cards={cards}
         isCardCarousel={true}
       />
