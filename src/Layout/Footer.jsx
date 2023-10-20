@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className=" mt-20 bg-white">
         <div className="x-auto w-full">
           <hr />
-          <h2 className=" p-4 text-4xl font-semibold uppercase text-pink-500">Anav Mart</h2>
+          <h2 className=" p-4 text-4xl font-semibold uppercase text-pink-400">Anav Mart</h2>
           <div className=" grid grid-cols-2 gap-8 max-md:p-5 md:grid-cols-4 md:p-10">
             <div className=" flex flex-col">
               <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500 ">Company</h2>
@@ -97,7 +97,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-gray-200 px-4 py-6 md:flex md:items-center md:justify-between">
+          <div className="bg-pink-100 px-4 py-6 md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center">
               © 2023 Anav Mart. All Rights Reserved.
             </span>
