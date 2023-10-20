@@ -34,12 +34,12 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold uppercase text-gray-500 ">Help center</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a target="_blank" href="https://www.twitter.com/" className="hover:underline">
                     Twitter
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a target="_blank" href="https://www.facebook.com/" className="hover:underline">
                     Facebook
                   </a>
                 </li>
