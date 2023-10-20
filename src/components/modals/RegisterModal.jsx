@@ -64,7 +64,7 @@ function RegisterModal({ onClose, onLoginClick }) {
                   type="email"
                   name="email"
                   id="email"
-                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500"
+                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-pink-500 focus:ring-pink-500"
                   placeholder="name@company.com"
                   required
                 />
@@ -78,7 +78,7 @@ function RegisterModal({ onClose, onLoginClick }) {
                   type="text"
                   name="name"
                   id="name"
-                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500"
+                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-pink-500 focus:ring-pink-500"
                   placeholder="Your name"
                   required
                 />
@@ -93,7 +93,7 @@ function RegisterModal({ onClose, onLoginClick }) {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500"
+                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-pink-500 focus:ring-pink-500"
                   required
                 />
               </div>
@@ -107,19 +107,19 @@ function RegisterModal({ onClose, onLoginClick }) {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500"
+                  className="block w-full rounded-lg border  border-gray-500 bg-white  p-2.5 text-sm text-black placeholder-gray-400 focus:border-pink-500 focus:ring-pink-500"
                   required
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full rounded-lg  bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-800">
+                className="w-full rounded-lg  bg-pink-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-pink-800 focus:outline-none focus:ring-4 focus:ring-pink-800">
                 Register your account
               </button>
               <div className="text-sm font-medium text-neutral-500">
                 Already have an account?{' '}
-                <a href="#" className=" text-blue-500 hover:underline" onClick={handleLoginClick}>
+                <a href="#" className=" text-pink-500 hover:underline" onClick={handleLoginClick}>
                   Login
                 </a>
               </div>
