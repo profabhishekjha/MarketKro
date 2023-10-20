@@ -40,7 +40,7 @@ export const usePrevNextButtons = (emblaApi, onButtonClick) => {
 export const PrevButton = ({ children, ...restProps }) => {
   return (
     <button
-      className={`embla__button--prev absolute left-0 top-1/2 z-10 m-1 h-12 w-12 -translate-y-1/2 touch-manipulation rounded-full bg-[#f0f0f0] p-2 no-underline disabled:opacity-30`}
+      className={`embla__button--prev absolute left-0 top-1/2 z-10 m-1 h-12 w-12 -translate-y-1/2 touch-manipulation rounded-full p-2 no-underline disabled:opacity-30`}
       type="button"
       {...restProps}>
       <svg className="embla__button__svg h-full w-full text-black" viewBox="0 0 532 532">
@@ -59,7 +59,7 @@ export const NextButton = (props) => {
 
   return (
     <button
-      className="embla__button--next absolute right-0 top-1/2 z-10 m-1 h-12 w-12 -translate-y-1/2 touch-manipulation rounded-full bg-[#f0f0f0] p-2 no-underline disabled:opacity-30"
+      className="embla__button--next absolute right-0 top-1/2 z-10 m-1 h-12 w-12 -translate-y-1/2 touch-manipulation rounded-full p-2 no-underline disabled:opacity-30"
       type="button"
       {...restProps}>
       <svg className="embla__button__svg h-full w-full text-black" viewBox="0 0 532 532">

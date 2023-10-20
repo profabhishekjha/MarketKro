@@ -32,7 +32,6 @@ export default function Home() {
   return (
     <main className="mx-10 my-5 flex flex-col gap-16 max-sm:mx-2">
       <BannerCarousel images={images} />
-      {/* <Dajfljadlf /> */}
       <Section
         FirstHeading="Womans Products"
         SecondHeading="Beauty Deals"
@@ -46,7 +45,7 @@ export default function Home() {
         isCardCarousel={true}
       />
 
-      <Adv isAdvLeft={true}>
+      {/*       <Adv isAdvLeft={true}>
         <BannerCarousel customClasses="w-[30vw]" images={images} />
         <Section
           FirstHeading="Diwali Special Products"
@@ -55,7 +54,7 @@ export default function Home() {
           isCardCarousel={false}
           cardCarouselCustomClasses={`w-[63vw] `}
         />
-      </Adv>
+      </Adv> */}
       <Section
         FirstHeading="Electronics Products"
         SecondHeading="Best Deals"
@@ -68,7 +67,7 @@ export default function Home() {
         cards={cards}
         isCardCarousel={true}
       />
-      <Adv isAdvLeft={false}>
+      {/*       <Adv isAdvLeft={false}>
         <BannerCarousel customClasses="w-[30vw]" images={images} />
         <Section
           FirstHeading="Diwali Special Products"
@@ -77,7 +76,7 @@ export default function Home() {
           isCardCarousel={false}
           cardCarouselCustomClasses={`w-[63vw] `}
         />
-      </Adv>
+      </Adv> */}
       <Section
         FirstHeading="Electronics Products"
         SecondHeading="Best Deals"
