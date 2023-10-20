@@ -5,8 +5,8 @@ import { faker } from '@faker-js/faker'
 import { Heart } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
-import LoginModal from '../../components/modals/LoginModal' // Adjust the path as needed
-import RegisterModal from '../../components/modals/RegisterModal' // Adjust the path as needed
+import LoginModal from '../components/modals/LoginModal' // Adjust the path as needed
+import RegisterModal from '../components/modals/RegisterModal' // Adjust the path as needed
 
 const CardSection = ({ onClick }) => {
   const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false) // State to control the toggle menu
@@ -79,7 +79,7 @@ const CardSection = ({ onClick }) => {
             {isLoggedIn ? (
               <button
                 onClick={handleOrderNowClick}
-                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-blue-500 to-teal-400 font-semibold text-white hover:bg-black">
+                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
                 {' '}
                 Order Now!
               </button>
@@ -89,7 +89,7 @@ const CardSection = ({ onClick }) => {
                   onClick={() => {
                     setIsLoginModalOpen(true)
                   }}
-                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-blue-500 to-teal-400 font-semibold text-white hover:bg-black">
+                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
                   {' '}
                   Order Now!
                 </button>
