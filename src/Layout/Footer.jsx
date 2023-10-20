@@ -5,13 +5,12 @@ const Footer = () => {
   const navigate = useNavigate()
   return (
     <>
-      <footer className=" mt-20  bg-gray-100 dark:bg-gray-700">
-        <div className="x-auto w-full ">
-          <div className="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 lg:py-8">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-                Company
-              </h2>
+      <footer className="mt-20 bg-white">
+        <div className="x-auto w-full">
+          <hr />
+          <h2 className=" text-4xl font-semibold uppercase text-pink-400">Anav Mart</h2>
+          <div className=" grid grid-cols-2 gap-8 md:grid-cols-4">
+            <div className=" mt-9 flex items-center">
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
@@ -101,8 +100,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-gray-200 px-4 py-6 dark:bg-gray-800 md:flex md:items-center md:justify-between">
-            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+          <div className="bg-gray-200 px-4 py-6 md:flex md:items-center md:justify-between">
+            <span className="text-sm text-gray-500 sm:text-center">
               © 2023 Anav Mart. All Rights Reserved.
             </span>
             <div className="mt-4 flex space-x-5 sm:justify-center md:mt-0">
@@ -110,28 +109,28 @@ const Footer = () => {
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                className="text-gray-400 hover:text-gray-900">
                 <img src="/socials/facebook.svg" alt="socials" className="h-5  w-5" />
               </a>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                className="text-gray-400 hover:text-gray-900">
                 <img src="/socials/instagram.svg" alt="socials" className="h-5  w-5" />
               </a>
               <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                className="text-gray-400 hover:text-gray-900">
                 <img src="/socials/twitter.svg" alt="socials" className="h-5  w-5" />
               </a>
               <a
                 href="https://www.youtube.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                className="text-gray-400 hover:text-gray-900">
                 <img src="/socials/youtube.svg" alt="socials" className="h-5 w-5" />
               </a>
             </div>
