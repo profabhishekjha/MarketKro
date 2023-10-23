@@ -8,6 +8,7 @@ import Product from './Pages/Product/Product'
 import Clothes from './Pages/Clothes/Clothes'
 import Shoes from './Pages/Shoes/Shoes'
 import Accessories from './Pages/Accessories/Accessories'
+import CheckoutPage from './components/CheckoutPage/CheckoutPage'
 
 const router = createBrowserRouter([
   {
@@ -24,10 +25,6 @@ const router = createBrowserRouter([
         element: <Favorite />
       },
       {
-        path: 'cart',
-        element: <Cart />
-      },
-      {
         path: 'product/:id',
         element: <Product />
       },
@@ -42,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: 'accessories',
         element: <Accessories />
+      },
+      {
+        path: 'cart',
+        element: <CheckoutPage />
       }
     ]
   }
