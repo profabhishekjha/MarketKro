@@ -44,10 +44,10 @@ const Dropdown = () => {
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      // Click occurred outside the dropdown, close it
       setIsAllCategoriesOpen(false)
     }
   }
+
   return (
     <div className="z-20" ref={dropdownRef}>
       <form className="flex items-center justify-center">

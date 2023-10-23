@@ -12,7 +12,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
       <CardSection
         images={`https://5.imimg.com/data5/ANDROID/Default/2022/2/YY/AY/VF/35336981/product-jpeg.jpg`}
@@ -20,7 +19,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
       <CardSection
         images={`https://staticimg.titan.co.in/Titan/Catalog/1825KM01_2.jpg?impolicy=pqmed&imwidth=640`}
@@ -28,7 +26,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
       <CardSection
         images={`https://staticimg.titan.co.in/Titan/Catalog/90140QM03_1.jpg?impolicy=pqmed&imwidth=640`}
@@ -36,7 +33,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
       <CardSection
         images={`https://staticimg.titan.co.in/Titan/Catalog/90140QM03_1.jpg?impolicy=pqmed&imwidth=640`}
@@ -44,7 +40,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
       <CardSection
         images={`https://staticimg.titan.co.in/Titan/Catalog/90140QM03_1.jpg?impolicy=pqmed&imwidth=640`}
@@ -52,7 +47,6 @@ const Accessories = () => {
         companyName={`TITAN`}
         description={`Titan Quartz Analog Watch with Blue Colour Strap for Men`}
         price={21999}
-        onClick={() => navigate('/cart')}
       />
     </div>
   )

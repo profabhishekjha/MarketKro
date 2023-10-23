@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import Rating from '@mui/material/Rating'
-import { faker } from '@faker-js/faker'
 import { Heart } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
@@ -9,11 +8,9 @@ import LoginModal from '../components/modals/LoginModal' // Adjust the path as n
 import RegisterModal from '../components/modals/RegisterModal' // Adjust the path as needed
 
 const CardSection = ({ onClick, images, title, description, price, companyName }) => {
-  const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false) // State to control the toggle menu
-  const [phoneNumber, setPhoneNumber] = useState('+1234567890')
   const [value] = React.useState(3)
   const [isFavorite, setIsFavorite] = useState(false)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false)
   const [openToggle, setOpenToggle] = useState(null)
@@ -27,24 +24,8 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
     setIsRegisterModalOpen(true)
   }
 
-  const toggleMenu = (menu) => {
-    if (openToggle === menu) {
-      setOpenToggle(null) // Close the toggle menu if it's already open
-    } else {
-      setOpenToggle(menu) // Open the toggle menu
-    }
-  }
-
-  const handlePhoneIconClick = () => {
-    toggleMenu('phone')
-  }
-
-  const handleWhatsAppIconClick = () => {
-    toggleMenu('whatsapp')
-  }
-
   const handleOrderNowClick = () => {
-    navigate('/checkoutpage')
+    navigate(`/product/${title}`)
   }
 
   return (
@@ -54,14 +35,16 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
           <div className=" h-60 overflow-hidden bg-white shadow-lg">
             <img
               className="h-60 w-72 cursor-pointer rounded-lg object-cover max-md:w-full"
-              onClick={onClick}
+              onClick={handleOrderNowClick}
               src={images}
               alt="Card Image"
             />
           </div>
           <div className=" grid w-[70vw] gap-5 max-md:w-[80vw] ">
             <div className="">
-              <p onClick={onClick} className="cursor-pointer text-xl font-bold capitalize">
+              <p
+                onClick={handleOrderNowClick}
+                className="cursor-pointer text-xl font-bold capitalize">
                 {' '}
                 {title}{' '}
               </p>
