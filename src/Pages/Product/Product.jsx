@@ -18,7 +18,7 @@ const Product = () => {
       <div className="flex h-fit w-1/3 flex-col gap-5">
         <ProductImage
           handleCartClick={handleCartClick}
-          isFavorite={isFavorite} 
+          isFavorite={isFavorite}
           handleFavoriteClick={handleFavoriteClick}
         />
       </div>
