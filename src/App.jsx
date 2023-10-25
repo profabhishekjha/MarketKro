@@ -11,6 +11,7 @@ import Accessories from './Pages/Accessories/Accessories'
 import CheckoutPage from './components/CheckoutPage/CheckoutPage'
 import Medicine from './Pages/Medicine/Medicine'
 import Footwear from './Pages/Footwear/Footwear'
+import ClothChoice from './Pages/Clothes/ClothChoice'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'clothing',
+        element: <ClothChoice />
+      },
+      {
+        path: 'clothing/mens',
+        element: <Clothes />
+      },
+      {
+        path: 'clothing/womens',
         element: <Clothes />
       },
       {

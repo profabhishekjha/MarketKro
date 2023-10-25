@@ -1,15 +1,9 @@
 import React from 'react'
 import CardSection from '../../components/cardSectionshop'
-import { useNavigate } from 'react-router-dom'
 
 const Medicine = () => {
-  const navigate = useNavigate()
-  const handleCardClick = (title) => {
-    // Handle click and pass the title to the navigate function
-    navigate(`/product/${title}`)
-  }
   return (
-    <div className="mt-10 flex flex-col items-center justify-center gap-5">
+    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://crushes.in/wp-content/uploads/2022/12/500mg-paracetamol-tablet-500x500-removebg-preview.png`}
         title={`Paracetamol Tablets IP 500mg`}

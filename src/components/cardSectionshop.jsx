@@ -30,8 +30,8 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
 
   return (
     <div>
-      <div className="container relative flex w-[90vw] rounded-lg border-2 max-md:flex-col">
-        <div className=" relative flex w-[90vw] gap-5 p-5 max-md:flex-col">
+      <div className="mx-auto w-80 overflow-hidden rounded-lg border-2">
+        <div className=" flex flex-col gap-5 p-5">
           <div className=" h-60 overflow-hidden bg-white shadow-lg">
             <img
               className="h-60 w-72 cursor-pointer rounded-lg object-cover max-md:w-full"
@@ -40,11 +40,11 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
               alt="Card Image"
             />
           </div>
-          <div className=" grid w-[70vw] gap-5 max-md:w-[80vw] ">
+          <div className=" h-[20vh] gap-5 ">
             <div className="">
               <p
                 onClick={handleOrderNowClick}
-                className="cursor-pointer text-xl font-bold capitalize">
+                className="cursor-pointer truncate text-xl font-bold capitalize">
                 {' '}
                 {title}{' '}
               </p>
@@ -55,42 +55,7 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
             </div>
 
             {/* ... (other JSX code) */}
-            {isLoggedIn ? (
-              <button
-                onClick={handleOrderNowClick}
-                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
-                {' '}
-                Order Now!
-              </button>
-            ) : (
-              <p className="w-80">
-                <button
-                  onClick={() => {
-                    setIsLoginModalOpen(true)
-                  }}
-                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
-                  {' '}
-                  Order Now!
-                </button>
-                Please{' '}
-                <span
-                  className="cursor-pointer text-blue-500"
-                  onClick={() => {
-                    setIsLoginModalOpen(true) // Open the LoginModal
-                  }}>
-                  login
-                </span>{' '}
-                or{` `}
-                <span
-                  className="cursor-pointer text-blue-500"
-                  onClick={() => {
-                    setIsRegisterModalOpen(true) // Open the RegisterModal
-                  }}>
-                  signup
-                </span>{' '}
-                to order.
-              </p>
-            )}
+
             {isLoginModalOpen && (
               <LoginModal
                 onClose={() => {
@@ -110,21 +75,6 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
               />
             )}
             {/* ... (other JSX code) */}
-          </div>
-          <div className="flex h-12 flex-col max-md:flex-row max-md:items-center max-md:justify-center ">
-            <Heart
-              className=" h-10  duration-500 hover:scale-125 max-lg:absolute max-lg:right-10"
-              color={`${isFavorite ? 'red' : 'black'}`}
-              fill={`${isFavorite ? 'red' : 'white'}`}
-              onClick={() => {
-                setIsFavorite(!isFavorite)
-                if (!isFavorite) {
-                  toast.success('Added to Favorites')
-                } else {
-                  toast.error('Removed from Favourites')
-                }
-              }}
-            />
           </div>
         </div>
       </div>
