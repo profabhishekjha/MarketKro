@@ -5,45 +5,45 @@ const Footwear = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center gap-5">
       <CardSection
-        images={`https://crushes.in/wp-content/uploads/2022/12/500mg-paracetamol-tablet-500x500-removebg-preview.png`}
-        title={`Paracetamol Tablets IP 500mg`}
-        companyName={`Crush Mart`}
-        description={`Best Medicine in city`}
+        images={`https://dxkvlfvncvqr8.cloudfront.net/media/file/cms-banner/download_file/relaxo-website-banner-1689137925.png`}
+        title={`Bahamas Flip-Flops for men`}
+        companyName={`Relaxo Footwear`}
+        description={`Best footwear currently`}
         price={299}
       />
       <CardSection
-        images={`https://pharmazone.com/cdn/shop/products/17219_000_001.png?v=1692206900`}
-        title={`BRUFEN 400MG 30TAB`}
-        companyName={`Pharmazone`}
-        description={`Best Solid Fit Red Shirt`}
+        images={`https://5.imimg.com/data5/SELLER/Default/2021/1/OW/US/LO/6215968/driving-5--500x500.jpg`}
+        title={`Relex FOOTWEAR Men Leather Driving Shoes`}
+        companyName={`Relex`}
+        description={`Best Solid Fit Black shoes`}
         price={349}
       />
       <CardSection
-        images={`https://www.netmeds.com/images/product-v1/600x600/991497/isp_cough_expectorant_100ml_409660_0_10.jpg`}
-        title={`ISP COUGH Syrup 100ml`}
-        companyName={`ISP`}
-        description={`Best cough syrup`}
+        images={`https://imgmedia.lbb.in/media/2020/10/5f869dbb4b344a3ebfad05b9_1602657723903.jpg`}
+        title={`Shop Ethnic Shoes For Men`}
+        companyName={`LLB`}
+        description={`Best footwear brand`}
         price={299}
       />
       <CardSection
-        images={`https://crushes.in/wp-content/uploads/2022/12/500mg-paracetamol-tablet-500x500-removebg-preview.png`}
-        title={`Paracetamol Tablets IP 500mg`}
-        companyName={`Crush Mart`}
-        description={`Best Medicine in city`}
+        images={`https://dxkvlfvncvqr8.cloudfront.net/media/file/cms-banner/download_file/relaxo-website-banner-1689137925.png`}
+        title={`Bahamas Flip-Flops for men`}
+        companyName={`Relaxo Footwear`}
+        description={`Best footwear currently`}
         price={299}
       />
       <CardSection
-        images={`https://pharmazone.com/cdn/shop/products/17219_000_001.png?v=1692206900`}
-        title={`BRUFEN 400MG 30TAB`}
-        companyName={`Pharmazone`}
-        description={`Best Solid Fit Red Shirt`}
+        images={`https://5.imimg.com/data5/SELLER/Default/2021/1/OW/US/LO/6215968/driving-5--500x500.jpg`}
+        title={`Relex FOOTWEAR Men Leather Driving Shoes`}
+        companyName={`Relex`}
+        description={`Best Solid Fit Black shoes`}
         price={349}
       />
       <CardSection
-        images={`https://www.netmeds.com/images/product-v1/600x600/991497/isp_cough_expectorant_100ml_409660_0_10.jpg`}
-        title={`ISP COUGH Syrup 100ml`}
-        companyName={`ISP`}
-        description={`Best cough syrup`}
+        images={`https://imgmedia.lbb.in/media/2020/10/5f869dbb4b344a3ebfad05b9_1602657723903.jpg`}
+        title={`Shop Ethnic Shoes For Men`}
+        companyName={`LLB`}
+        description={`Best footwear brand`}
         price={299}
       />
     </div>

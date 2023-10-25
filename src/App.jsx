@@ -10,6 +10,7 @@ import Shoes from './Pages/Shoes/Shoes'
 import Accessories from './Pages/Accessories/Accessories'
 import CheckoutPage from './components/CheckoutPage/CheckoutPage'
 import Medicine from './Pages/Medicine/Medicine'
+import Footwear from './Pages/Footwear/Footwear'
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: 'medicine',
         element: <Medicine />
+      },
+      {
+        path: 'footwear',
+        element: <Footwear />
       },
       {
         path: 'cart',
