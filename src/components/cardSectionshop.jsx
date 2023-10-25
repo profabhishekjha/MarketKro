@@ -49,9 +49,13 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
                 {title}{' '}
               </p>
               <Rating name="read-only" value={value} readOnly />
-              <p className="cursor-pointer text-lg font-bold uppercase">{companyName}</p>
-              <p className=" w-3/4 max-md:h-[7vh] max-md:w-[78vw]">{description}</p>
-              <h1 className=" text-xl font-bold">₹ {price}</h1>
+              <div className=" flex h-14 flex-col gap-2">
+                <p className="text-md cursor-pointer font-semibold uppercase">{companyName}</p>
+                <p className=" w-full text-xs max-md:h-[7vh] max-md:w-[78vw]">
+                  {description.substring(0, 50)}....
+                </p>
+              </div>
+              <h1 className="mt-2 text-xl font-bold">₹ {price}</h1>
             </div>
 
             {/* ... (other JSX code) */}
