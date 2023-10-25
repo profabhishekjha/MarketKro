@@ -9,6 +9,7 @@ import Clothes from './Pages/Clothes/Clothes'
 import Shoes from './Pages/Shoes/Shoes'
 import Accessories from './Pages/Accessories/Accessories'
 import CheckoutPage from './components/CheckoutPage/CheckoutPage'
+import Medicine from './Pages/Medicine/Medicine'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: 'accessories',
         element: <Accessories />
+      },
+      {
+        path: 'medicine',
+        element: <Medicine />
       },
       {
         path: 'cart',
