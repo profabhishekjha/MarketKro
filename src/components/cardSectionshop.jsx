@@ -30,7 +30,7 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
 
   return (
     <div>
-      <div className="mx-auto w-80 overflow-hidden rounded-lg border-2">
+      <div className="mx-auto w-80 overflow-hidden rounded-lg border-2 duration-500 hover:scale-105">
         <div className=" flex flex-col gap-5 p-5">
           <div className=" h-60 overflow-hidden bg-white shadow-lg">
             <img

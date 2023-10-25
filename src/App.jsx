@@ -36,11 +36,7 @@ const router = createBrowserRouter([
         element: <ClothChoice />
       },
       {
-        path: 'clothing/mens',
-        element: <Clothes />
-      },
-      {
-        path: 'clothing/womens',
+        path: 'clothing/:name',
         element: <Clothes />
       },
       {
