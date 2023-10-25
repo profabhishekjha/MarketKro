@@ -9,7 +9,6 @@ const Dropdown = () => {
     'Clothing',
     'Shoes',
     'Accessories',
-    'Food',
     'Medicine',
     'Footwear',
     'Electronics',
