@@ -28,9 +28,9 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center justify-between border-b px-10 max-sm:px-2">
         <div>
-          <Link to={'/'} className="flex w-auto items-center gap-3">
+          <Link to={'/'} className="flex w-auto items-center gap-3 max-md:gap-1">
             <img src={logo} alt="Market Kro Logo" className="aspect-auto h-20 w-auto" />
-            <span className="text-2xl font-bold">Anav Mart</span>
+            <span className="text-2xl font-bold max-md:text-lg">Anav Mart</span>
           </Link>
         </div>
         <div className="flex items-center gap-10 max-sm:gap-5">

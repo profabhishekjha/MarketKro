@@ -45,7 +45,7 @@ function CheckoutPage() {
   return (
     <>
       <div className="container mx-auto p-8 max-md:p-0">
-        <h2 className=" text-2xl font-bold">Your Cart</h2>
+        <h2 className=" ml-4 mt-4 text-2xl font-bold">Your Cart</h2>
         <ShoppingCart />
         {cart.length > 0 && (
           <>
