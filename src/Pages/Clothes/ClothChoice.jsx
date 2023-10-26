@@ -34,7 +34,7 @@ const ClothChoice = () => {
           </div>
           <div
             onClick={() => navigate('/clothing/boys')}
-            className="relative flex h-[80vh] w-[22vw] cursor-pointer items-center justify-center bg-orange-400 text-white duration-500 hover:scale-95 max-lg:w-full">
+            className="relative flex h-[80vh] w-[22vw] cursor-pointer items-center justify-center rounded-lg border border-black text-white duration-500 hover:scale-95 max-lg:w-full">
             <p className="absolute left-[25%] top-[45%] text-4xl font-bold duration-500 hover:scale-110">
               Boy's Wear
             </p>
