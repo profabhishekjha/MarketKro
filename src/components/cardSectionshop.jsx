@@ -30,21 +30,23 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
 
   return (
     <div>
-      <div className="mx-auto w-80 overflow-hidden rounded-lg border-2 duration-500 hover:scale-105">
-        <div className=" flex flex-col gap-5 p-5">
-          <div className=" h-60 overflow-hidden bg-white shadow-lg">
+      <div className=" mx-auto w-80 overflow-hidden rounded-lg border-2 duration-500 hover:scale-105 max-md:w-full">
+        <div className="flex flex-col items-center justify-center p-3">
+          <div className=" flex h-60 w-full items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
             <img
-              className="h-60 w-72 cursor-pointer rounded-lg object-cover max-md:w-full"
+              className=" h-60 w-full cursor-pointer rounded-lg object-fill"
               onClick={handleOrderNowClick}
               src={images}
               alt="Card Image"
             />
           </div>
+        </div>
+        <div className="flex flex-col gap-5 p-5">
           <div className=" h-[20vh] gap-5 ">
             <div className="">
               <p
                 onClick={handleOrderNowClick}
-                className="cursor-pointer truncate text-xl font-bold capitalize">
+                className=" cursor-pointer truncate text-lg font-bold capitalize max-md:w-[75%]">
                 {' '}
                 {title}{' '}
               </p>
