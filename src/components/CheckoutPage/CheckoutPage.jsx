@@ -35,7 +35,6 @@ function CheckoutPage() {
     // Handle placing the order here
     console.log('Shipping Info:', shippingInfo)
     console.log('Payment Info:', paymentInfo)
-    // You can add your logic to process the order
   }
   const cart = [
     { id: 1, name: 'Product 1', price: 20, quantity: 1 },
