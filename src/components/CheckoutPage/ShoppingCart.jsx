@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 export function ShoppingCart() {
   const [cart, setCart] = useState([
-    { id: 1, name: 'Product 1', price: 20, quantity: 1 },
-    { id: 2, name: 'Product 2', price: 30, quantity: 2 },
-    { id: 3, name: 'Product 3', price: 25, quantity: 1 }
+    { id: 1, name: 'Product 1', price: 20, img: '/Images/jonny.jpeg', quantity: 1 },
+    { id: 2, name: 'Product 2', price: 30, img: '/Images/andrew.jpg', quantity: 2 },
+    { id: 3, name: 'Product 3', price: 25, img: '/Images/rock.jpg', quantity: 1 }
   ])
 
   const handleIncrement = (id) => {
@@ -44,7 +44,7 @@ export function ShoppingCart() {
             <div className="flex items-center justify-between max-md:flex-col">
               <div className="">
                 <img
-                  src="http://via.placeholder.com/100x100" // Placeholder image
+                  src={item.img} // Placeholder image
                   alt={item.name}
                   className="h-[180px] w-[200px] rounded-lg object-cover"
                 />
