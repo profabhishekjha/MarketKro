@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 export function ShoppingCart() {
-  const cart = [
+  const [cart, setCart] = useState([
     { id: 1, name: 'Product 1', price: 20, quantity: 1 },
     { id: 2, name: 'Product 2', price: 30, quantity: 2 },
     { id: 3, name: 'Product 3', price: 25, quantity: 1 }
-  ]
+  ])
 
   const handleIncrement = (id) => {
     const updatedCart = cart.map((item) =>
@@ -31,36 +31,38 @@ export function ShoppingCart() {
   }
 
   return (
-    <div className=" container mx-auto p-8">
+    <div className="container mx-auto p-8 max-md:p-5">
       <h2 className="mb-4 text-lg font-semibold">Shopping Cart</h2>
 
       {cart.length === 0 ? (
         <p>No items here</p>
       ) : (
         cart.map((item) => (
-          <div key={item.id} className="mb-4 rounded-lg border p-4 shadow-md">
-            <div className="flex items-center justify-between">
-              <div>
+          <div
+            key={item.id}
+            className=" mb-4 rounded-lg border p-4 shadow-md max-md:h-[55vh] max-md:w-full">
+            <div className="flex items-center justify-between max-md:flex-col">
+              <div className="">
                 <img
                   src="http://via.placeholder.com/100x100" // Placeholder image
                   alt={item.name}
-                  className="h-16 w-16 rounded-lg object-cover"
+                  className="h-[180px] w-[200px] rounded-lg object-cover"
                 />
                 <div className="mt-2">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-600">Price: ₹{item.price.toFixed(2)}</p>
                 </div>
               </div>
-              <div>
+              <div className="mt-8">
                 <button
                   onClick={() => handleDecrement(item.id)}
-                  className="rounded-md bg-blue-500 p-2 px-4 text-white hover:bg-blue-600">
+                  className="rounded-md bg-blue-500 p-1 px-3 text-white hover:bg-blue-600">
                   -
                 </button>
                 <span className="mx-2">{item.quantity}</span>
                 <button
                   onClick={() => handleIncrement(item.id)}
-                  className="rounded-md bg-blue-500 p-2 px-4 text-white hover:bg-blue-600">
+                  className="rounded-md bg-blue-500 p-1 px-3 text-white hover:bg-blue-600">
                   +
                 </button>
                 <button
