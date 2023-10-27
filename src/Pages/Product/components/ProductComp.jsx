@@ -27,7 +27,6 @@ export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick 
           Add to Cart <ShoppingCart />
         </button>
         <div className="flex flex-wrap items-center gap-3">
-          <span className="text-xl font-bold">{`₹200`}</span>
           <Link to={`/cart`}>
             <button className="flex h-fit w-fit items-center gap-3 rounded-md bg-[#ef6351] p-3 text-lg font-bold text-white active:bg-[#c74f15]">
               Buy Now <Wallet />
@@ -35,6 +34,7 @@ export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick 
           </Link>
         </div>
       </div>
+      <span className="flex-end text-right text-xl font-semibold">{`₹200`}</span>
     </>
   )
 }
