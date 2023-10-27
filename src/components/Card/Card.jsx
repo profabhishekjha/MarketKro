@@ -16,7 +16,7 @@ const Card = ({ heading, companyName, price, rating, image, isFavoriteState, isC
         <div className="relative flex cursor-pointer items-center justify-center rounded-xl">
           <div
             onClick={() => {
-              navigate(`/product/productID`)
+              navigate(`/product/${heading}`)
             }}
             className="h-[10.4vw]  w-[15vw] overflow-hidden rounded-lg ">
             <img

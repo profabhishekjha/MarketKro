@@ -8,6 +8,10 @@ import Product from './Pages/Product/Product'
 import Clothes from './Pages/Clothes/Clothes'
 import Shoes from './Pages/Shoes/Shoes'
 import Accessories from './Pages/Accessories/Accessories'
+import CheckoutPage from './components/CheckoutPage/CheckoutPage'
+import Medicine from './Pages/Medicine/Medicine'
+import Footwear from './Pages/Footwear/Footwear'
+import ClothChoice from './Pages/Clothes/ClothChoice'
 
 const router = createBrowserRouter([
   {
@@ -24,15 +28,15 @@ const router = createBrowserRouter([
         element: <Favorite />
       },
       {
-        path: 'cart',
-        element: <Cart />
-      },
-      {
         path: 'product/:id',
         element: <Product />
       },
       {
         path: 'clothing',
+        element: <ClothChoice />
+      },
+      {
+        path: 'clothing/:name',
         element: <Clothes />
       },
       {
@@ -42,6 +46,18 @@ const router = createBrowserRouter([
       {
         path: 'accessories',
         element: <Accessories />
+      },
+      {
+        path: 'medicine',
+        element: <Medicine />
+      },
+      {
+        path: 'footwear',
+        element: <Footwear />
+      },
+      {
+        path: 'cart',
+        element: <CheckoutPage />
       }
     ]
   }

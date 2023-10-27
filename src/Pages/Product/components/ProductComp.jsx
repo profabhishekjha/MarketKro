@@ -28,7 +28,7 @@ export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick 
         </button>
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-xl font-bold">{`₹200`}</span>
-          <Link to={'/cart'}>
+          <Link to={`/cart`}>
             <button className="flex h-fit w-fit items-center gap-3 rounded-md bg-[#ef6351] p-3 text-lg font-bold text-white active:bg-[#c74f15]">
               Buy Now <Wallet />
             </button>
@@ -60,7 +60,7 @@ export const ProductDetails = () => {
         </span>
       </div>
       {/* <Separator className="my-3 mb-10" /> */}
-      <div className='my-3 mb-10'></div>
+      <div className="my-3 mb-10"></div>
     </>
   )
 }
@@ -114,8 +114,7 @@ export const ProductFilters = () => {
         </div>
       </div>
       {/* <Separator className="my-3 mb-10" /> */}
-      <div className='my-3 mb-10'></div>
-
+      <div className="my-3 mb-10"></div>
     </>
   )
 }
@@ -136,8 +135,7 @@ export const ProductHighlights = () => {
         </ul>
       </div>
       {/* <Separator className="my-3 mb-10" /> */}
-      <div className='my-3 mb-10'></div>
-
+      <div className="my-3 mb-10"></div>
     </>
   )
 }
@@ -169,8 +167,7 @@ export const ProductReviewsData = () => {
         </div>
       </div>
       {/* <Separator className="my-3 mb-10" /> */}
-      <div className='my-3 mb-10'></div>
-
+      <div className="my-3 mb-10"></div>
     </>
   )
 }

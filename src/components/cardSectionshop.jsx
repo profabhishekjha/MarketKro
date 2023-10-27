@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import Rating from '@mui/material/Rating'
-import { faker } from '@faker-js/faker'
 import { Heart } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
@@ -9,11 +8,9 @@ import LoginModal from '../components/modals/LoginModal' // Adjust the path as n
 import RegisterModal from '../components/modals/RegisterModal' // Adjust the path as needed
 
 const CardSection = ({ onClick, images, title, description, price, companyName }) => {
-  const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false) // State to control the toggle menu
-  const [phoneNumber, setPhoneNumber] = useState('+1234567890')
   const [value] = React.useState(3)
   const [isFavorite, setIsFavorite] = useState(false)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false)
   const [openToggle, setOpenToggle] = useState(null)
@@ -27,87 +24,44 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
     setIsRegisterModalOpen(true)
   }
 
-  const toggleMenu = (menu) => {
-    if (openToggle === menu) {
-      setOpenToggle(null) // Close the toggle menu if it's already open
-    } else {
-      setOpenToggle(menu) // Open the toggle menu
-    }
-  }
-
-  const handlePhoneIconClick = () => {
-    toggleMenu('phone')
-  }
-
-  const handleWhatsAppIconClick = () => {
-    toggleMenu('whatsapp')
-  }
-
   const handleOrderNowClick = () => {
-    navigate('/checkoutpage')
+    navigate(`/product/${title}`)
   }
 
   return (
     <div>
-      <div className="container relative flex w-[90vw] rounded-lg border-2 max-md:flex-col">
-        <div className=" relative flex w-[90vw] gap-5 p-5 max-md:flex-col">
-          <div className=" h-60 overflow-hidden bg-white shadow-lg">
+      <div className=" mx-auto w-80 overflow-hidden rounded-lg border-2 duration-500 hover:scale-105 max-md:w-full">
+        <div className="flex flex-col items-center justify-center p-3">
+          <div className=" flex h-60 w-full items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
             <img
-              className="h-60 w-72 cursor-pointer rounded-lg object-cover max-md:w-full"
-              onClick={onClick}
+              className=" h-60 w-full cursor-pointer rounded-lg object-fill"
+              onClick={handleOrderNowClick}
               src={images}
               alt="Card Image"
             />
           </div>
-          <div className=" grid w-[70vw] gap-5 max-md:w-[80vw] ">
+        </div>
+        <div className="flex flex-col gap-5 p-5">
+          <div className=" h-[20vh] gap-5 ">
             <div className="">
-              <p onClick={onClick} className="cursor-pointer text-xl font-bold capitalize">
+              <p
+                onClick={handleOrderNowClick}
+                className=" cursor-pointer truncate text-lg font-bold capitalize max-md:w-[75%]">
                 {' '}
                 {title}{' '}
               </p>
               <Rating name="read-only" value={value} readOnly />
-              <p className="cursor-pointer text-lg font-bold uppercase">{companyName}</p>
-              <p className=" w-3/4 max-md:h-[7vh] max-md:w-[78vw]">{description}</p>
-              <h1 className=" text-xl font-bold">₹ {price}</h1>
+              <div className=" flex h-14 flex-col gap-2">
+                <p className="text-md cursor-pointer font-semibold uppercase">{companyName}</p>
+                <p className=" w-full text-xs max-md:h-[7vh] max-md:w-[78vw]">
+                  {description.substring(0, 50)}....
+                </p>
+              </div>
+              <h1 className="mt-2 text-xl font-bold">₹ {price}</h1>
             </div>
 
             {/* ... (other JSX code) */}
-            {isLoggedIn ? (
-              <button
-                onClick={handleOrderNowClick}
-                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
-                {' '}
-                Order Now!
-              </button>
-            ) : (
-              <p className="w-80">
-                <button
-                  onClick={() => {
-                    setIsLoginModalOpen(true)
-                  }}
-                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
-                  {' '}
-                  Order Now!
-                </button>
-                Please{' '}
-                <span
-                  className="cursor-pointer text-blue-500"
-                  onClick={() => {
-                    setIsLoginModalOpen(true) // Open the LoginModal
-                  }}>
-                  login
-                </span>{' '}
-                or{` `}
-                <span
-                  className="cursor-pointer text-blue-500"
-                  onClick={() => {
-                    setIsRegisterModalOpen(true) // Open the RegisterModal
-                  }}>
-                  signup
-                </span>{' '}
-                to order.
-              </p>
-            )}
+
             {isLoginModalOpen && (
               <LoginModal
                 onClose={() => {
@@ -127,21 +81,6 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
               />
             )}
             {/* ... (other JSX code) */}
-          </div>
-          <div className="flex h-12 flex-col max-md:flex-row max-md:items-center max-md:justify-center ">
-            <Heart
-              className=" h-10  duration-500 hover:scale-125 max-lg:absolute max-lg:right-10"
-              color={`${isFavorite ? 'red' : 'black'}`}
-              fill={`${isFavorite ? 'red' : 'white'}`}
-              onClick={() => {
-                setIsFavorite(!isFavorite)
-                if (!isFavorite) {
-                  toast.success('Added to Favorites')
-                } else {
-                  toast.error('Removed from Favourites')
-                }
-              }}
-            />
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Dropdown = () => {
   const [suggestions, setSuggestions] = useState([])
   const [isAllCategoriesOpen, setIsAllCategoriesOpen] = useState(false)
   const navigate = useNavigate()
+  const dropdownRef = useRef(null)
   const categories = [
     'Clothing',
     'Shoes',
     'Accessories',
-    'Food',
     'Medicine',
     'Footwear',
     'Electronics',
@@ -34,12 +34,21 @@ const Dropdown = () => {
   }
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress)
+    window.addEventListener('click', handleClickOutside)
     return () => {
       window.removeEventListener('keydown', handleKeyPress)
+      window.removeEventListener('click', handleClickOutside)
     }
   }, [])
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsAllCategoriesOpen(false)
+    }
+  }
+
   return (
-    <div className="z-20">
+    <div className="z-20" ref={dropdownRef}>
       <form className="flex items-center justify-center">
         <div className="flex ">
           <button
