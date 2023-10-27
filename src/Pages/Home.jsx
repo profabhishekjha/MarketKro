@@ -13,18 +13,7 @@ export default function Home() {
   function CardList() {
     const cards = []
     for (let i = 0; i < 10; i++) {
-      cards.push(
-        <Card
-          id={i}
-          heading={faker.commerce.productName()}
-          description={faker.commerce.productDescription()}
-          companyName={faker.company.buzzVerb()}
-          image={faker.image.url()}
-          price={faker.commerce.price()}
-          rating={faker.number.float({ min: 1, max: 5, precision: 0.1 })}
-          reviews={faker.number.int({ max: 10000 })}
-        />
-      )
+      cards.push(<Card id={i} heading={faker.commerce.productName()} image={faker.image.url()} />)
     }
     return cards
   }
@@ -44,17 +33,6 @@ export default function Home() {
         cards={cards}
         isCardCarousel={true}
       />
-
-      {/* <Adv isAdvLeft={true}>
-        <BannerCarousel customClasses="w-[30vw]" images={images} />
-        <Section
-          FirstHeading="Diwali Special Products"
-          SecondHeading="50% Discount"
-          cards={cards}
-          isCardCarousel={false}
-          cardCarouselCustomClasses={`w-[63vw] `}
-        />
-      </Adv> */}
 
       <Section
         FirstHeading="Children Products"

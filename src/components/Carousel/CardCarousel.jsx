@@ -1,9 +1,5 @@
 import useEmblaCarousel from 'embla-carousel-react'
-import {
-  PrevButton,
-  NextButton,
-  usePrevNextButtons
-} from './EmblaCarouselArrowButtons.jsx'
+import { PrevButton, NextButton, usePrevNextButtons } from './EmblaCarouselArrowButtons.jsx'
 
 const CardCarousel = ({ cards, customClasses }) => {
   const options = { loop: true }
@@ -16,18 +12,21 @@ const CardCarousel = ({ cards, customClasses }) => {
     usePrevNextButtons(emblaApi)
   return (
     <div className={`embla ${customClasses}`}>
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="embla__container card-embla__container mb-9 flex touch-pan-y">
+      <div className="relative overflow-hidden" ref={emblaRef}>
+        <div className="embla__container card-embla__container flex touch-pan-y">
           {slides.map((index) => (
-            <div className="card-embla__slide min-w-0" key={index}>
-              <div className="card-embla__slide__card">{cards[index]}</div>
+            <div className="card-embla__slide " key={index}>
+              <div className="">{cards[index]}</div>
             </div>
           ))}
         </div>
+        <div className="absolute bottom-[50%] left-0 pl-1 ">
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        </div>
+        <div className="absolute bottom-[50%] right-0 pr-1 ">
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        </div>
       </div>
-
-      <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-      <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
     </div>
   )
 }
