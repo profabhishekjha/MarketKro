@@ -1,6 +1,3 @@
-import { Heart, ShoppingCart } from 'lucide-react'
-import { AddCartFunc, AddFavoriteFunc } from './Card-Function'
-import RenderStars from './CardRating'
 import { useNavigate } from 'react-router-dom'
 
 const Card = ({ heading, image }) => {
@@ -9,25 +6,24 @@ const Card = ({ heading, image }) => {
   return (
     <>
       {/* card */}
-      <div className="my-card redborder flex flex-col rounded-xl p-2">
+      <div className=" flex flex-col justify-center rounded-xl border border-slate-500 p-2">
         {/* image */}
-        <div className="relative  flex cursor-pointer items-center justify-center rounded-xl">
+        <div className="relative  flex cursor-pointer flex-col items-center justify-center gap-3 rounded-xl">
           <div
             onClick={() => {
               navigate(`/product/${heading}`)
             }}
-            className=" overflow-hidden rounded-lg max-md:h-52  ">
+            className=" w-40 overflow-hidden rounded-lg max-md:w-full  ">
             <img
               src={image}
               alt="Cards"
               className=" transform rounded-lg object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
-        </div>
-
-        <div className="my-4 flex flex-col items-center justify-between px-1">
-          <div className="flex flex-col justify-between gap-1 ">
-            <span className="text-md font-semibold">{heading}</span>
+          <div className=" flex w-40 justify-start gap-1 truncate max-md:w-full max-md:justify-center ">
+            <span className="w-full text-center text-sm font-medium max-md:text-lg max-md:font-semibold">
+              {heading}
+            </span>
           </div>
         </div>
       </div>
