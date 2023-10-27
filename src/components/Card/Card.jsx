@@ -13,7 +13,7 @@ const Card = ({ heading, image }) => {
             onClick={() => {
               navigate(`/product/${heading}`)
             }}
-            className=" w-40 overflow-hidden rounded-lg max-md:w-full  ">
+            className=" w-64 overflow-hidden rounded-lg max-md:w-full  ">
             <img
               src={image}
               alt="Cards"

@@ -11,7 +11,7 @@ const CardCarousel = ({ cards, customClasses }) => {
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } =
     usePrevNextButtons(emblaApi)
   return (
-    <div className={`embla ${customClasses}`}>
+    <div className={`embla ${customClasses} `}>
       <div className="relative overflow-hidden" ref={emblaRef}>
         <div className="embla__container card-embla__container flex touch-pan-y">
           {slides.map((index) => (
@@ -20,10 +20,10 @@ const CardCarousel = ({ cards, customClasses }) => {
             </div>
           ))}
         </div>
-        <div className="absolute bottom-[50%] left-0 pl-1 ">
+        <div className="absolute bottom-[40%] left-0 pl-1 ">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         </div>
-        <div className="absolute bottom-[50%] right-0 pr-1 ">
+        <div className="absolute bottom-[40%] right-0 pr-1 ">
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
