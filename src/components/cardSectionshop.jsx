@@ -5,10 +5,10 @@ import { faker } from '@faker-js/faker'
 import { Heart } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
-import LoginModal from '../../components/modals/LoginModal' // Adjust the path as needed
-import RegisterModal from '../../components/modals/RegisterModal' // Adjust the path as needed
+import LoginModal from '../components/modals/LoginModal' // Adjust the path as needed
+import RegisterModal from '../components/modals/RegisterModal' // Adjust the path as needed
 
-const CardSection = ({ onClick }) => {
+const CardSection = ({ onClick, images, title, description, price, companyName }) => {
   const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false) // State to control the toggle menu
   const [phoneNumber, setPhoneNumber] = useState('+1234567890')
   const [value] = React.useState(3)
@@ -53,9 +53,9 @@ const CardSection = ({ onClick }) => {
         <div className=" relative flex w-[90vw] gap-5 p-5 max-md:flex-col">
           <div className=" h-60 overflow-hidden bg-white shadow-lg">
             <img
-              className="h-60 w-full cursor-pointer rounded-lg object-cover"
+              className="h-60 w-72 cursor-pointer rounded-lg object-cover max-md:w-full"
               onClick={onClick}
-              src={faker.image.url()}
+              src={images}
               alt="Card Image"
             />
           </div>
@@ -63,23 +63,19 @@ const CardSection = ({ onClick }) => {
             <div className="">
               <p onClick={onClick} className="cursor-pointer text-xl font-bold capitalize">
                 {' '}
-                {faker.commerce.productName()}{' '}
+                {title}{' '}
               </p>
               <Rating name="read-only" value={value} readOnly />
-              <p className="cursor-pointer text-lg font-bold uppercase">
-                {faker.company.buzzVerb()}
-              </p>
-              <p className=" w-3/4 max-md:h-[7vh] max-md:w-[78vw]">
-                {faker.commerce.productDescription().substring(0, 75)}
-              </p>
-              <h1 className=" text-xl font-bold">₹ {faker.commerce.price()}</h1>
+              <p className="cursor-pointer text-lg font-bold uppercase">{companyName}</p>
+              <p className=" w-3/4 max-md:h-[7vh] max-md:w-[78vw]">{description}</p>
+              <h1 className=" text-xl font-bold">₹ {price}</h1>
             </div>
 
             {/* ... (other JSX code) */}
             {isLoggedIn ? (
               <button
                 onClick={handleOrderNowClick}
-                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-blue-500 to-teal-400 font-semibold text-white hover:bg-black">
+                className="group relative mb-2 mr-2 inline-flex h-10 w-28 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
                 {' '}
                 Order Now!
               </button>
@@ -89,7 +85,7 @@ const CardSection = ({ onClick }) => {
                   onClick={() => {
                     setIsLoginModalOpen(true)
                   }}
-                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-blue-500 to-teal-400 font-semibold text-white hover:bg-black">
+                  className="group relative mb-2 mr-2 inline-flex h-10 w-24 items-center justify-center overflow-hidden rounded-lg border border-black bg-gradient-to-b from-pink-500 to-pink-300 font-semibold text-white hover:bg-black">
                   {' '}
                   Order Now!
                 </button>

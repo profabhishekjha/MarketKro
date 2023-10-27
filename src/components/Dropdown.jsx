@@ -26,6 +26,7 @@ const Dropdown = () => {
     // Handle click on an item within the "All categories" submenu
     navigate(`/${category.toLowerCase()}`)
     setSuggestions([])
+    setIsAllCategoriesOpen(false)
   }
   const handleAllCategoriesClick = () => {
     // Toggle the dropdown state
@@ -45,7 +46,7 @@ const Dropdown = () => {
             id="dropdown-button"
             data-dropdown-toggle="dropdown"
             type="button"
-            className='border flex items-center justify-center px-4 py-2 rounded-lg'
+            className="flex items-center justify-center rounded-lg border px-4 py-2"
             onClick={handleAllCategoriesClick}>
             All categories
             <svg
@@ -67,7 +68,7 @@ const Dropdown = () => {
           </button>
           <div
             id="dropdown"
-            className={`z-10 no-scrollbar ${
+            className={`no-scrollbar z-10 ${
               isAllCategoriesOpen ? 'block' : 'hidden'
             } right-100 absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white`}>
             {' '}
