@@ -9,7 +9,7 @@ const Card = ({ heading, image }) => {
   return (
     <>
       {/* card */}
-      <div className="my-card redborder flex flex-col rounded-xl p-2">
+      <div className="my-card flex flex-col rounded-xl p-2">
         {/* image */}
         <div className="relative  flex cursor-pointer items-center justify-center rounded-xl">
           <div
