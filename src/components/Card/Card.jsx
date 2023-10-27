@@ -6,7 +6,7 @@ const Card = ({ heading, image }) => {
   return (
     <>
       {/* card */}
-      <div className=" flex flex-col justify-center rounded-xl border border-slate-500 p-2">
+      <div className=" flex flex-col justify-center rounded-xl border border-slate-200 p-2">
         {/* image */}
         <div className="relative  flex cursor-pointer flex-col items-center justify-center gap-3 rounded-xl">
           <div
