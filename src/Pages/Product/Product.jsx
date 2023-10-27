@@ -14,8 +14,8 @@ const Product = () => {
   const comment = `This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product.`
 
   return (
-    <main className="red mx-10 flex min-h-screen gap-10 py-10 max-md:flex-col">
-      <div className="red flex h-fit  flex-col  gap-5 max-md:w-full">
+    <main className=" mx-10 flex min-h-screen gap-10 py-10 max-md:flex-col">
+      <div className=" flex h-fit  flex-col  gap-5 max-md:w-full">
         <ProductImage
           handleCartClick={handleCartClick}
           isFavorite={isFavorite}

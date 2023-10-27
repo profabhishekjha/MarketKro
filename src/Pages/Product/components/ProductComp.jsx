@@ -44,7 +44,7 @@ export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick 
 export const ProductDetails = () => {
   return (
     <>
-      <div className="flex flex-col gap-2">
+      <div className=" flex flex-col gap-2">
         <span className="text-4xl font-bold">{'Red Cat'}</span>
         <span className="text-lg">
           {'This is a red cat if you want to buy it then buy it otherwise me mummy se kah doonga'}
