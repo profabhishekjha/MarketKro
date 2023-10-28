@@ -49,7 +49,7 @@ export const ProductDetails = () => {
         <span className="text-lg">
           {'This is a red cat if you want to buy it then buy it otherwise me mummy se kah doonga'}
         </span>
-        <span className="text-3xl font-semibold">{`₹200`}</span>
+        <span className="max-md:xl text-3xl font-semibold">{`₹200`}</span>
         {/* <div className="flex gap-1">
               <RenderStars rating={3.5} />
               <span className="text-xl font-semibold text-yellow-500">{`(7458 reviews)`}</span>
@@ -70,7 +70,7 @@ export const ProductFilters = () => {
   return (
     <>
       <div className=" flex flex-col gap-2">
-        <span className="mb-5 text-3xl font-bold">Product Filters</span>
+        <span className="max-md:xl mb-5 text-3xl font-bold">Product Filters</span>
         <div className=" flex items-center gap-10 max-md:grid max-md:gap-5 ">
           <span className="text-xl font-semibold">Color</span>
           <div className="flex gap-2 overflow-hidden max-md:flex-wrap">
@@ -106,7 +106,7 @@ export const ProductHighlights = () => {
   return (
     <>
       <div className="flex flex-col gap-2">
-        <span className="mb-5 text-3xl font-bold">Product Highlights</span>
+        <span className="max-md:xl mb-5 text-3xl font-bold">Product Highlights</span>
         <ul className="ml-10 list-disc text-base font-semibold max-md:ml-5">
           <li>{`ZARA - Mens wear - T-shirt Red color Large`}</li>
           <li>{`5 Months Warranty`}</li>
@@ -126,19 +126,19 @@ export const ProductReviewsData = () => {
   return (
     <>
       <div className="flex flex-col gap-5">
-        <span className="text-3xl font-bold">Reviews</span>
+        <span className="max-md:xl text-3xl font-bold">Reviews</span>
         <div className="flex gap-2">
           {/* Total Reviews */}
           <div className=" flex flex-col gap-2">
-            <span className="text-xl font-semibold">Total Reviews</span>
+            <span className="text-xl font-semibold max-md:text-lg">Total Reviews</span>
             <span className="text-2xl font-semibold">{`74.1K`}</span>
             <span className="text-gray-400">Growth in reviews on this year</span>
           </div>
 
-          <div className="mx-5 border"></div>
+          <div className="mx-2 border"></div>
 
           <div className=" flex flex-col gap-2">
-            <span className="text-xl font-semibold">Average Rating</span>
+            <span className="text-xl font-semibold max-md:text-lg">Average Rating</span>
             <span className="flex gap-2 text-2xl font-semibold">
               {`3.5`}
               <RenderStars rating={3.5} />

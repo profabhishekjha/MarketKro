@@ -52,11 +52,9 @@ const Product = () => {
             userImage="https://fastly.picsum.photos/id/838/640/480.jpg?hmac=2QcoWqBUG3DmpzyUOpzW-50L-Rj41gXyhKQkvmFy7eo"
           />
           <CustomerReviews
-            comment={
-              'Hello this is a comment from the user and this is a very good product and I like it very much. I will buy it again.'
-            }
+            comment={comment}
             Name="Rituraj"
-            rating={1.4}
+            rating={5}
             userImage="https://loremflickr.com/cache/resized/65535_52656597110_2c703b8f1e_c_640_480_nofilter.jpg"
           />
         </div>
