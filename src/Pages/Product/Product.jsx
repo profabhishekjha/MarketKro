@@ -24,7 +24,7 @@ const Product = () => {
       </div>
 
       {/* product description on right side */}
-      <div className="red ">
+      <div className=" ">
         <ProductDetails />
 
         {/* Products Filter For Color and size */}
