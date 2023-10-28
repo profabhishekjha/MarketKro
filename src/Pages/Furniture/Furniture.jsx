@@ -5,8 +5,7 @@ const Furniture = () => {
   return (
     <div>
       <h1 className=" w-full px-8 pt-10 text-3xl font-bold">Best Furniture Available</h1>
-
-      <div className=" grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+      <div className=" grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:p-3 max-md:pt-10">
         <CardSection
           images={`https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSoRrDwGmnjWa5eMMXDXm4UAo8b1q8ju9eUdrdKd4WOPSp-srIZxxyO0nxONOALVgey80IGlmY68cO5cSent0xxpX4WTEde4D8EWUR2mbKfaT6Uyrf17kYudQ&usqp=CAE`}
           title={`Bedroom Wooden Wardrobe`}

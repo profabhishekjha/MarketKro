@@ -4,8 +4,8 @@ import CardSection from '../../components/cardSectionshop'
 const Medicine = () => {
   return (
     <div>
-      <h1 className=" w-full px-10 pt-8 text-3xl font-bold">Best Medicine Available</h1>
-      <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-10 px-3 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+      <h1 className=" w-full px-7 pt-10 text-3xl font-bold">Best Medicine Available</h1>
+      <div className="grid grid-cols-4 items-center justify-center gap-8 p-10 px-3 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:p-3 max-md:pt-10">
         <CardSection
           images={`https://crushes.in/wp-content/uploads/2022/12/500mg-paracetamol-tablet-500x500-removebg-preview.png`}
           title={`Paracetamol Tablets IP 500mg`}
