@@ -5,10 +5,11 @@ import Adv from '../components/Adv'
 import BannerCarousel from '../components/Carousel/BannerCarousel'
 export default function Home() {
   const images = [
-    '/Images/Nature2.jpeg',
-    '/Images/Nature1.avif',
-    '/Images/Nature3.avif',
-    '/Images/Nature4.avif'
+    '/Images/Nature1.webp',
+    '/Images/Nature2.webp',
+    '/Images/Nature3.webp',
+    '/Images/Nature4.webp',
+    '/Images/Nature5.webp'
   ]
   function CardList() {
     const cards = []
