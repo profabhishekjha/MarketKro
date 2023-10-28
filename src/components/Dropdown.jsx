@@ -77,7 +77,7 @@ const Dropdown = () => {
           </button>
           <div
             id="dropdown"
-            className={`no-scrollbar z-10 ${
+            className={`z-10 ${
               isAllCategoriesOpen ? 'block' : 'hidden'
             } right-100 absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white`}>
             {' '}
