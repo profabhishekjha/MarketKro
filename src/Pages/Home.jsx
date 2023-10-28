@@ -20,7 +20,7 @@ export default function Home() {
   }
   const cards = CardList()
   return (
-    <main className=" mx-10 my-5 flex flex-col gap-16 max-sm:mx-2">
+    <main className=" mx-10 my-5 flex flex-col gap-8 max-sm:mx-2">
       <BannerCarousel images={images} />
       <Section
         FirstHeading="Womans Products"
