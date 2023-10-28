@@ -22,7 +22,5 @@ const Favorite = () => {
     return cards
   }
   const cards = CardList()
-  return <main className="m-10 flex flex-wrap gap-10">{cards}</main>
+  return <main className="m-10 flex flex-wrap items-center justify-center gap-10">{cards}</main>
 }
-
-export default Favorite
