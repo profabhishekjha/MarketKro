@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick }) => {
   return (
     <>
-      <div className="relative">
+      <div className=" relative">
         <img
           src="https://loremflickr.com/cache/resized/65535_52682151570_91793b7a9a_c_640_480_nofilter.jpg"
           alt="Product Image"
@@ -69,47 +69,28 @@ export const ProductDetails = () => {
 export const ProductFilters = () => {
   return (
     <>
-      <div className="flex flex-col gap-2">
+      <div className=" flex flex-col gap-2">
         <span className="mb-5 text-3xl font-bold">Product Filters</span>
-        <div className="flex items-center gap-10">
+        <div className=" flex items-center gap-10 max-md:grid max-md:gap-5 ">
           <span className="text-xl font-semibold">Color</span>
-          <div className="flex gap-3">
-            <button className="flex items-center justify-between gap-2 rounded-md border px-1 active:bg-gray-300">
-              <div className="h-4 w-4 rounded-full border-black bg-red-500"></div>
-              <span className="text-base font-semibold">Red</span>
-            </button>
-            <button className="flex items-center justify-between gap-2 rounded-md border px-1 active:bg-gray-300">
-              <div className="h-4 w-4 rounded-full border-black bg-blue-500"></div>
-              <span className="text-base font-semibold">Blue</span>
-            </button>
-            <button className="flex items-center justify-between gap-2 rounded-md border px-1 active:bg-gray-300">
-              <div className="h-4 w-4 rounded-full border-black bg-green-500"></div>
-              <span className="text-base font-semibold">Green</span>
-            </button>
-            <button className="flex items-center justify-between gap-2 rounded-md border px-1 active:bg-gray-300">
-              <div className="h-4 w-4 rounded-full border-black bg-yellow-500"></div>
-              <span className="text-base font-semibold">Yellow</span>
-            </button>
+          <div className="flex gap-2 overflow-hidden max-md:flex-wrap">
+            <button class="h-10 w-10 rounded-full bg-red-500 font-bold text-white">R</button>
+            <button class="h-10 w-10 rounded-full bg-blue-500 font-bold text-white">B</button>
+            <button class="h-10 w-10 rounded-full bg-green-500 font-bold text-white">G</button>
+            <button class="h-10 w-10 rounded-full bg-yellow-500 font-bold text-white">Y</button>
+            <button class="h-10 w-10 rounded-full bg-violet-500 font-bold text-white">V</button>
+            <button class="h-10 w-10 rounded-full bg-indigo-500 font-bold text-white">I</button>
+            <button class="h-10 w-10 rounded-full bg-orange-500 font-bold text-white">O</button>
           </div>
         </div>
-        <div className="flex items-center gap-12">
+        <div className=" flex items-center gap-12 max-md:grid max-md:gap-5 ">
           <span className="text-xl font-semibold">Size</span>
-          <div className="flex gap-3">
-            <button className="w-10 rounded-md border px-2 text-base font-semibold active:bg-gray-300">
-              SM
-            </button>
-            <button className="w-10 rounded-md border px-2 text-base font-semibold active:bg-gray-300">
-              M
-            </button>
-            <button className="w-10 rounded-md border px-2 text-base font-semibold active:bg-gray-300">
-              L
-            </button>
-            <button className="w-10 rounded-md border px-2 text-base font-semibold active:bg-gray-300">
-              XL
-            </button>
-            <button className="w-10 rounded-md border px-2 text-base font-semibold active:bg-gray-300">
-              2XL
-            </button>
+          <div className="flex gap-2 overflow-hidden max-md:flex-wrap ">
+            <button class="h-8 w-12 rounded-md bg-gray-300 text-black">S</button>
+            <button class="h-8 w-12 rounded-md bg-gray-300 text-black">M</button>
+            <button class="h-8 w-12 rounded-md bg-gray-300 text-black">L</button>
+            <button class="h-8 w-12 rounded-md bg-gray-300 text-black">XL</button>
+            <button class="h-8 w-12 rounded-md bg-gray-300 text-black">2XL</button>
           </div>
         </div>
       </div>
@@ -126,7 +107,7 @@ export const ProductHighlights = () => {
     <>
       <div className="flex flex-col gap-2">
         <span className="mb-5 text-3xl font-bold">Product Highlights</span>
-        <ul className="ml-20 list-disc text-base font-semibold ">
+        <ul className="ml-10 list-disc text-base font-semibold max-md:ml-5">
           <li>{`ZARA - Mens wear - T-shirt Red color Large`}</li>
           <li>{`5 Months Warranty`}</li>
           <li>{`One week replacement policy`}</li>
