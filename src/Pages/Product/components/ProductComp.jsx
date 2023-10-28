@@ -9,7 +9,7 @@ export const ProductImage = ({ handleFavoriteClick, isFavorite, handleCartClick 
         <img
           src="https://loremflickr.com/cache/resized/65535_52682151570_91793b7a9a_c_640_480_nofilter.jpg"
           alt="Product Image"
-          className="w-full rounded-lg object-cover"
+          className="w-full  rounded-lg object-cover"
         />
         <div onClick={handleFavoriteClick} className={`absolute right-2 top-2 w-6 cursor-pointer`}>
           <Heart
