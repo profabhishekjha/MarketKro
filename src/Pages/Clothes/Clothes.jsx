@@ -3,7 +3,7 @@ import CardSection from '../../components/cardSectionshop'
 
 const Clothes = () => {
   return (
-    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+    <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/c/q/j/xxl-st2-vebnor-original-imagpv8n3qmhqctd.jpeg?q=90`}
         title={`Vebnor Men Solid Casual Black Shirt`}

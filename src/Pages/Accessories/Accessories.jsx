@@ -3,7 +3,7 @@ import CardSection from '../../components/cardSectionshop'
 
 const Accessories = () => {
   return (
-    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+    <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://staticimg.titan.co.in/Titan/Catalog/90140QM03_1.jpg?impolicy=pqmed&imwidth=640`}
         title={`Titan Metal Mechanicals Blue Dial Analog Stainless Steel Strap Watch for Men`}

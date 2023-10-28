@@ -3,7 +3,7 @@ import CardSection from '../../components/cardSectionshop'
 
 const Medicine = () => {
   return (
-    <div className=" mt-10 grid grid-cols-4 items-center justify-center gap-8 px-3 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 p-10 px-3 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://crushes.in/wp-content/uploads/2022/12/500mg-paracetamol-tablet-500x500-removebg-preview.png`}
         title={`Paracetamol Tablets IP 500mg`}

@@ -3,7 +3,7 @@ import CardSection from '../../components/cardSectionshop'
 
 const Electronics = () => {
   return (
-    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+    <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://m.media-amazon.com/images/I/71gZWUHJqYL._AC_UF350,350_QL80_.jpg`}
         title={`OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)`}
