@@ -15,7 +15,7 @@ const Product = () => {
 
   return (
     <main className=" mx-10 flex min-h-screen gap-10 py-10 max-md:flex-col">
-      <div className=" flex h-fit  flex-col  gap-5 max-md:w-full">
+      <div className="  flex  h-fit w-[50%] flex-col  gap-5 max-md:w-full">
         <ProductImage
           handleCartClick={handleCartClick}
           isFavorite={isFavorite}
@@ -24,7 +24,7 @@ const Product = () => {
       </div>
 
       {/* product description on right side */}
-      <div className="red ">
+      <div className=" ">
         <ProductDetails />
 
         {/* Products Filter For Color and size */}
@@ -37,7 +37,7 @@ const Product = () => {
         <ProductReviewsData />
 
         {/* Customer reviews and comments */}
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="mb-5 text-3xl font-bold">Customer Reviews</span>
           <CustomerReviews
             comment={comment}
