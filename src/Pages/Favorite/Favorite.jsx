@@ -24,7 +24,7 @@ const Favorite = () => {
   const cards = CardList()
   return (
     <main
-      className=" mt-10 grid grid-cols-4 items-center justify-center gap-10 px-32 max-lg:px-10 max-md:grid-cols-2 max-sm:grid-cols-1"
+      className=" mt-10 grid grid-cols-4 items-center justify-center gap-10 px-32 max-xl:grid-cols-3 max-lg:grid-cols-2 max-lg:px-10 max-sm:grid-cols-1"
       key={cards}>
       {cards}
     </main>
