@@ -4,8 +4,8 @@ import CardSection from '../../components/cardSectionshop'
 const Toys = () => {
   return (
     <div>
-      <h1 className=" w-full px-10 pt-8 text-3xl font-bold">Best Toys Available</h1>
-      <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+      <h1 className=" w-full px-10 pt-10 text-3xl font-bold">Best Toys Available</h1>
+      <div className="grid grid-cols-4 items-center justify-center gap-8 p-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:p-3 max-md:pt-10">
         <CardSection
           images={`https://m.media-amazon.com/images/I/31YiWRHLWXL.jpg`}
           title={`Online Collections Compatible Public Truck Toys Truck Made in India by Plastic (Red Blue)`}
