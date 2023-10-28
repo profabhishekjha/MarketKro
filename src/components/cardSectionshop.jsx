@@ -34,7 +34,7 @@ const CardSection = ({ onClick, images, title, description, price, companyName }
         <div className="flex flex-col items-center justify-center p-3">
           <div className=" flex h-60 w-full items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
             <img
-              className=" h-60 w-full cursor-pointer rounded-lg object-fill"
+              className=" h-60 w-full cursor-pointer rounded-lg object-cover"
               onClick={handleOrderNowClick}
               src={images}
               alt="Card Image"

@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout/Layout'
 import Error from './Pages/Error'
 import Home from './Pages/Home'
-import Favorite from './Pages/Favorite/Favorite'
 import Cart from './Pages/Cart/Cart'
+import Favorite from './Pages/Favorite/Favorite'
 import Product from './Pages/Product/Product'
 import Clothes from './Pages/Clothes/Clothes'
 import Shoes from './Pages/Shoes/Shoes'
@@ -12,6 +12,7 @@ import CheckoutPage from './components/CheckoutPage/CheckoutPage'
 import Medicine from './Pages/Medicine/Medicine'
 import Footwear from './Pages/Footwear/Footwear'
 import ClothChoice from './Pages/Clothes/ClothChoice'
+import Electronics from './Pages/Electronics/Electronics'
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: 'footwear',
         element: <Footwear />
+      },
+      {
+        path: 'electronics',
+        element: <Electronics />
       },
       {
         path: 'cart',
