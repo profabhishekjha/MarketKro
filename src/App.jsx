@@ -13,6 +13,8 @@ import Medicine from './Pages/Medicine/Medicine'
 import Footwear from './Pages/Footwear/Footwear'
 import ClothChoice from './Pages/Clothes/ClothChoice'
 import Electronics from './Pages/Electronics/Electronics'
+import Toys from './Pages/Toys/Toys'
+import Furniture from './Pages/Furniture/Furniture'
 
 const router = createBrowserRouter([
   {
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
       {
         path: 'electronics',
         element: <Electronics />
+      },
+      {
+        path: 'toys',
+        element: <Toys />
+      },
+      {
+        path: 'furniture',
+        element: <Furniture />
       },
       {
         path: 'cart',

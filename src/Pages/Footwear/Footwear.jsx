@@ -3,7 +3,7 @@ import CardSection from '../../components/cardSectionshop'
 
 const Footwear = () => {
   return (
-    <div className="mt-10 grid grid-cols-4 items-center justify-center gap-8 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+    <div className="mt-5 grid grid-cols-4 items-center justify-center gap-8 p-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 ">
       <CardSection
         images={`https://dxkvlfvncvqr8.cloudfront.net/media/file/cms-banner/download_file/relaxo-website-banner-1689137925.png`}
         title={`Bahamas Flip-Flops for men`}
