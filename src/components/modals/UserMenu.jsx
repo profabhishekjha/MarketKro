@@ -70,7 +70,7 @@ const UserMenu = () => {
           rounded-full 
           border-[1px] 
           border-neutral-200 
-          p-4 
+          p-4
           transition 
           hover:shadow-md 
           md:px-2 

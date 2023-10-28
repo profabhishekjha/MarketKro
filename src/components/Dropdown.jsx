@@ -79,7 +79,7 @@ const Dropdown = () => {
             id="dropdown"
             className={`z-10 ${
               isAllCategoriesOpen ? 'block' : 'hidden'
-            } right-100 absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white`}>
+            } absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white max-md:right-10 max-md:top-28`}>
             {' '}
             <ul
               className="py-2 text-sm text-gray-700 dark:text-black"
