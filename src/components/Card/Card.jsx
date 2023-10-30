@@ -32,4 +32,3 @@ const Card = ({ heading, image }) => {
 }
 
 export default Card
-/* thid */
