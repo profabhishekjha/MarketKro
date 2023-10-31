@@ -30,5 +30,6 @@ const Card = ({ heading, image }) => {
     </>
   )
 }
-
 export default Card
+
+/* commit */
