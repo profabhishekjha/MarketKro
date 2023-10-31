@@ -44,5 +44,5 @@ const BannerCarousel = ({ images, customClasses }) => {
     </div>
   )
 }
-
+/* Banner ends */
 export default BannerCarousel
