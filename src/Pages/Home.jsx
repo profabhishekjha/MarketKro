@@ -34,7 +34,6 @@ export default function Home() {
         cards={cards}
         isCardCarousel={true}
       />
-
       <Section
         FirstHeading="Children Products"
         SecondHeading="Toys"
