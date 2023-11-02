@@ -5,36 +5,33 @@ import Cart from '/Svgs/Cart.svg'
 
 const Error = () => {
   return (
-    <main className="relative mx-10 flex min-h-screen items-center justify-between">
-      {/* Message */}
-      <div className="absolute -left-52 -top-10 -z-10 aspect-square h-[40vw]">
-        <img src={Blob} alt="Blob" style={{ objectFit: 'contain' }} />
-      </div>
-      <div className="flex w-1/2 flex-col gap-4 pl-40">
-        <div className="flex flex-col">
-          <span className="text-6xl font-bold">{`Product not available`}</span>
-          {/* <span className="text-4xl font-bold">{`Ooops!`}</span> */}
-          {/* <span className="text-4xl font-bold">{`Product not available`}</span> */}
-          <span className="pt-3 text-gray-400">{`This product is not available or removed!`}</span>
-          <span className="pb-3 text-gray-400">{`We suggest you go back to home page.`}</span>
+    <div className="flex flex-col-reverse items-center justify-center gap-16 px-4 py-24 md:gap-28 md:px-44 md:py-20 lg:flex-row lg:px-24 lg:py-24">
+      <div className="relative w-full pb-12 lg:pb-0 xl:w-1/2 xl:pt-24">
+        <div className="relative">
+          <div className="absolute">
+            <div className="">
+              <h1 className="my-2 text-2xl font-bold text-gray-800">
+                Looks like you've found the doorway to the great nothing
+              </h1>
+              <p className="my-2 text-gray-800">
+                Sorry about that! Please visit our hompage to get where you need to go.
+              </p>
+              <a href="/">
+                <button className="md my-2 rounded-xl border bg-indigo-600 px-8 py-4 text-center text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50 sm:w-full lg:w-auto">
+                  Take me there!
+                </button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+          </div>
         </div>
-        <button className="w-fit rounded-3xl border-2 border-black bg-purple-300 px-3 py-2 text-lg font-semibold active:bg-purple-400">
-          <Link href={'/'}>Back to Home</Link>
-        </button>
       </div>
-      {/* Robot Image */}
-      <div></div>
-      <div className="relative mr-20 aspect-square h-[25vw]">
-        <img src={Cart} alt="Not Found Robot" style={{ objectFit: 'contain' }} />
+      <div>
+        <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
       </div>
-      <div className="absolute right-10 top-10 -z-10 aspect-square h-[40vw]">
-        <img
-          src={Blob}
-          alt="Blob2"
-          style={{ objectFit: 'contain', opacity: '0.5', rotate: '80deg' }}
-        />
-      </div>
-    </main>
+    </div>
   )
 }
 
