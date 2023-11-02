@@ -1,7 +1,6 @@
 import { faker } from '@faker-js/faker'
 import Card from '../components/Card/Card'
 import Section from '../components/Section'
-import Adv from '../components/Adv'
 import BannerCarousel from '../components/Carousel/BannerCarousel'
 export default function Home() {
   const images = [
