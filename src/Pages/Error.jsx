@@ -36,4 +36,3 @@ const Error = () => {
 }
 
 export default Error
-/* mumui */
