@@ -1,8 +1,3 @@
-import { Link } from 'react-router-dom'
-
-import Blob from '/Svgs/Blob.svg'
-import Cart from '/Svgs/Cart.svg'
-
 const Error = () => {
   return (
     <div className="flex flex-col-reverse items-center justify-center gap-16 px-4 py-24 md:gap-28 md:px-44 md:py-20 lg:flex-row lg:px-24 lg:py-24">
