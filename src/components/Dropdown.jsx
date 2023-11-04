@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Dropdown = () => {
   const [suggestions, setSuggestions] = useState([])
   const [isAllCategoriesOpen, setIsAllCategoriesOpen] = useState(false)
   const navigate = useNavigate()
+  const dropdownRef = useRef(null)
   const categories = [
     'Clothing',
     'Shoes',
     'Accessories',
-    'Food',
     'Medicine',
     'Footwear',
     'Electronics',
@@ -26,6 +26,7 @@ const Dropdown = () => {
     // Handle click on an item within the "All categories" submenu
     navigate(`/${category.toLowerCase()}`)
     setSuggestions([])
+    setIsAllCategoriesOpen(false)
   }
   const handleAllCategoriesClick = () => {
     // Toggle the dropdown state
@@ -33,19 +34,28 @@ const Dropdown = () => {
   }
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress)
+    window.addEventListener('click', handleClickOutside)
     return () => {
       window.removeEventListener('keydown', handleKeyPress)
+      window.removeEventListener('click', handleClickOutside)
     }
   }, [])
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsAllCategoriesOpen(false)
+    }
+  }
+
   return (
-    <div className="z-20">
+    <div className="z-20" ref={dropdownRef}>
       <form className="flex items-center justify-center">
         <div className="flex ">
           <button
             id="dropdown-button"
             data-dropdown-toggle="dropdown"
             type="button"
-            className='border flex items-center justify-center px-4 py-2 rounded-lg'
+            className="flex items-center justify-center rounded-lg border px-4 py-2"
             onClick={handleAllCategoriesClick}>
             All categories
             <svg
@@ -67,9 +77,9 @@ const Dropdown = () => {
           </button>
           <div
             id="dropdown"
-            className={`z-10 no-scrollbar ${
+            className={`z-10 ${
               isAllCategoriesOpen ? 'block' : 'hidden'
-            } right-100 absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white`}>
+            } absolute top-7 mt-8 max-h-60 w-36 divide-y divide-gray-100 overflow-y-auto rounded-lg bg-white shadow dark:bg-white max-md:right-10 max-md:top-28`}>
             {' '}
             <ul
               className="py-2 text-sm text-gray-700 dark:text-black"

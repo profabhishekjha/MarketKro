@@ -14,8 +14,8 @@ const Product = () => {
   const comment = `This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product. I like it very much. I will buy it again.This is a very good product.`
 
   return (
-    <main className="mx-10 flex min-h-screen gap-10 py-10">
-      <div className="flex h-fit w-1/3 flex-col gap-5">
+    <main className="  mx-10 flex min-h-screen gap-10 py-10 max-md:flex-col">
+      <div className="   flex w-[40%]  flex-col  gap-5 max-md:w-full">
         <ProductImage
           handleCartClick={handleCartClick}
           isFavorite={isFavorite}
@@ -24,7 +24,7 @@ const Product = () => {
       </div>
 
       {/* product description on right side */}
-      <div className="flex-1">
+      <div className=" w-[60%] max-md:w-full">
         <ProductDetails />
 
         {/* Products Filter For Color and size */}
@@ -37,7 +37,7 @@ const Product = () => {
         <ProductReviewsData />
 
         {/* Customer reviews and comments */}
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="mb-5 text-3xl font-bold">Customer Reviews</span>
           <CustomerReviews
             comment={comment}
@@ -52,11 +52,9 @@ const Product = () => {
             userImage="https://fastly.picsum.photos/id/838/640/480.jpg?hmac=2QcoWqBUG3DmpzyUOpzW-50L-Rj41gXyhKQkvmFy7eo"
           />
           <CustomerReviews
-            comment={
-              'Hello this is a comment from the user and this is a very good product and I like it very much. I will buy it again.'
-            }
+            comment={comment}
             Name="Rituraj"
-            rating={1.4}
+            rating={5}
             userImage="https://loremflickr.com/cache/resized/65535_52656597110_2c703b8f1e_c_640_480_nofilter.jpg"
           />
         </div>

@@ -39,7 +39,7 @@ const BannerCarousel = ({ images, customClasses }) => {
         </div>
       </div>
 
-      {/*       <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+      {/* <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
       <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} /> */}
     </div>
   )

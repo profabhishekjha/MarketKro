@@ -22,9 +22,8 @@ export const CustomerReviews = ({ comment, Name, userImage, rating }) => {
 
   return (
     <>
-      {/* Comment 1 */}
-      <div className="flex gap-5">
-        <div className="flex w-[220px] gap-5">
+      <div className=" flex gap-5 max-md:flex-col">
+        <div className=" flex w-[220px] gap-5">
           <div className="aspect-square h-12 w-12">
             <img
               src={userImage}
@@ -38,9 +37,10 @@ export const CustomerReviews = ({ comment, Name, userImage, rating }) => {
           </div>
         </div>
         <div className="border" />
+        {/* cmt */}
         <div
           ref={commentRef}
-          className={`relative flex h-fit flex-1 gap-3
+          className={` relative flex h-fit flex-1 gap-3
             ${showFullComment ? 'max-h-full' : ''}`}>
           <p
             className={`flex justify-between text-justify text-base  

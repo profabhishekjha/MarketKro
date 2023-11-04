@@ -70,14 +70,14 @@ const UserMenu = () => {
           rounded-full 
           border-[1px] 
           border-neutral-200 
-          p-4 
+          p-4
           transition 
           hover:shadow-md 
           md:px-2 
           md:py-1
           ">
           <AiOutlineMenu />
-          <div className="hidden md:block">
+          <div className="">
             <Avatar />
           </div>
         </div>
@@ -86,14 +86,17 @@ const UserMenu = () => {
         <div
           className="
           absolute 
-          right-0 
-          top-10
+          right-0
+          top-10 
           w-[10vw]
-          overflow-hidden 
+          overflow-hidden
           rounded-xl 
           bg-white 
           text-sm 
           shadow-md 
+          max-md:-right-12 
+          max-md:top-16 
+          max-md:w-[35vw]
           ">
           <div className="flex cursor-pointer flex-col">
             <>
