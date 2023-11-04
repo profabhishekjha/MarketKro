@@ -6,12 +6,12 @@ const Clothes = () => {
   const navigate = useNavigate()
   return (
     <div className="mt-10 flex flex-col items-center justify-center gap-5">
-      {/* <CardSection onClick={() => navigate('/cart')} />
       <CardSection onClick={() => navigate('/cart')} />
       <CardSection onClick={() => navigate('/cart')} />
       <CardSection onClick={() => navigate('/cart')} />
       <CardSection onClick={() => navigate('/cart')} />
-      <CardSection onClick={() => navigate('/cart')} /> */}
+      <CardSection onClick={() => navigate('/cart')} />
+      <CardSection onClick={() => navigate('/cart')} />
     </div>
   )
 }
