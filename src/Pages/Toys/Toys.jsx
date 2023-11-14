@@ -96,3 +96,5 @@ const Toys = () => {
 }
 
 export default Toys
+
+/* Toys Page */
