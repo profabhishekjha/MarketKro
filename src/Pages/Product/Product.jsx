@@ -64,3 +64,5 @@ const Product = () => {
 }
 
 export default Product
+
+/* Product Page */
