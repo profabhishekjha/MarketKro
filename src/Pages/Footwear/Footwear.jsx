@@ -54,3 +54,5 @@ const Footwear = () => {
 }
 
 export default Footwear
+
+/* Footwear Page */
