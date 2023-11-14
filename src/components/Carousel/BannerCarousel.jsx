@@ -22,9 +22,9 @@ const BannerCarousel = ({ images, customClasses }) => {
     usePrevNextButtons(emblaApi, onButtonClick)
 
   return (
-    <div className={`embla relative ${customClasses}`}>
+    <div className={` embla relative rounded-lg ${customClasses}`}>
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="embla__container banner-embla__container flex cursor-grab touch-pan-y active:cursor-grabbing">
+        <div className=" embla__container banner-embla__container flex cursor-grab touch-pan-y active:cursor-grabbing">
           {slides.map((index) => (
             <div className="banner-embla__slide min-w-0" key={index}>
               <img
