@@ -68,3 +68,5 @@ const Furniture = () => {
 }
 
 export default Furniture
+
+/* Furniture Page */
