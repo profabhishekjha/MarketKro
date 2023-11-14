@@ -54,3 +54,5 @@ const Shoes = () => {
 }
 
 export default Shoes
+
+/* Shoes Page */
