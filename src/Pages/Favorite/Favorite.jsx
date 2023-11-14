@@ -32,3 +32,5 @@ const Favorite = () => {
 }
 
 export default Favorite
+
+/* Favorites Page */
