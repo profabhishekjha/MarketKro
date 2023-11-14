@@ -54,3 +54,5 @@ const Medicine = () => {
 }
 
 export default Medicine
+
+/* Machine Page */
